@@ -4,8 +4,6 @@ TRADING ALGORITHMS
 """
 
 
-# I have included the test data function since the autograder asked me to.
-# However, it is not used in this Milestone
 # Function assigning right column to choose in file
 def col_to_y(col):
     columns = ["date", "open", "high", "low", "close", "adj_close", "volume"]
@@ -14,7 +12,7 @@ def col_to_y(col):
             return i
 
 
-# function 1
+# function for testing
 def test_data(filename, col, day):
     """A test function to query the data you loaded into your program.
 
@@ -118,8 +116,6 @@ def alg_moving_average(filename):
     The CSV stock data should be loaded into your program; use that data to
     make decisions using the moving average algorithm.
 
-    Any bookkeeping setup from Milestone I should be called/used here.
-
     Algorithm:
     - Trading must start on day 21, taking the average of the previous 20 days.
     - You must buy shares if the current day price is 5%, or more, lower
@@ -199,8 +195,6 @@ def alg_mine(filename):
 
     Using the CSV stock data that should be loaded into your program, use
     that data to make decisions using your own custome trading algorithm.
-
-    Also, any bookkeeping setup in Milestone I should be called/used here.
 
     Args:
         A filename, as a string.
@@ -401,8 +395,7 @@ def alg_mine(filename):
     # Remember, all your stocks should be sold at the end!
     return stocks_owned, cash_balance
 
-
-# Don't forget the required "__main__" check!
+# main check
 def main():
     # My testing will use AAPL.csv or MSFT.csv
     filename = input("Enter a filename for stock data (CSV format): ")
