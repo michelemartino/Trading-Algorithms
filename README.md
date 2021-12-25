@@ -8,5 +8,6 @@ The second, is a personalized algorithm.
 To run the programs, unzip the cvs files in the repository.
 
 ### Running Program
-
-python Trading_Algorithms.py
+  ```sh
+  python Trading_Algorithms.py
+  ```
