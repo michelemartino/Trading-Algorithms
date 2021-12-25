@@ -3,8 +3,10 @@
 ## Getting Started
 
 This project contains two programs that read cvs files sontaining data of stock prices over time and performs two trading algorithms.
-To run the programs, unziip the cvs files in the repository.
+The first algorithm is the moving-average one
+The second, is a personalized algorithm
+To run the programs, unzip the cvs files in the repository.
 
 ### Running Program
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doe
+python Trading_Algorithms.py
